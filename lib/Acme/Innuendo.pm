@@ -14,11 +14,16 @@ our @EXPORT = qw(
   special_place nudge_nudge wink_wink walk_the_dog
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 $VERSION = eval $VERSION;  # see L<perlmodstyle>
 
 sub special_place {
-  return *main::;
+  my $namespace = shift || 'main';
+  if (defined $namespace) {
+    $namespace .= '::';
+  }
+  no strict 'refs';
+  return *$namespace;
 }
 
 sub nudge_nudge {
@@ -56,7 +61,7 @@ __END__
 
 =head1 NAME
 
-Acme::Innuendo - polite access to Perls private parts
+Acme::Innuendo - polite access to Perl's private parts
 
 =head1 SYNOPSIS
 
@@ -87,7 +92,10 @@ table for those who condider it akin to "touching Perl's genitals."
 
   $root_namespace = special_place();
 
-Returns the root name space.
+  $module_namespace = special_place( $module_name );
+
+Returns the name space of the specified module, or the root namespace
+if no module is specified.
 
 =item wink_wink
 
@@ -108,6 +116,21 @@ Changes or adds the symbol in the namespace.
 Walks a namespace and sends symbol information to the callback routine.
 
 =back
+
+=head1 SEE ALSO
+
+This module is a bit of humor.  For more serious applications, see the
+following modules on CPAN:
+
+  Alias
+  Devel::LexAlias
+  Lexical::Alias
+  Package::Alias
+  Tie::Alias
+  Tie::Alias::Array
+  Tie::Alias::Handle
+  Tie::Alias::Hash
+  Variable::Alias
 
 =head1 AUTHOR
 
