@@ -1,0 +1,6 @@
+Revision history for Perl extension Acme::Innuendo.
+
+0.01    Thu Jun 17 05:24:07 2004
+	- original version; created by h2xs 1.23 with options
+		-A -B -X -n Acme::Innuendo -b 5.6.1 -O
+

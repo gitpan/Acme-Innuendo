@@ -1,0 +1,7 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Acme-Innuendo.t
+lib/Acme/Innuendo.pm
+META.yml                                 Module meta-data (added by MakeMaker)
