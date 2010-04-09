@@ -14,7 +14,7 @@ our @EXPORT = qw(
   special_place nudge_nudge wink_wink walk_the_dog
 );
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 $VERSION = eval $VERSION;  # see L<perlmodstyle>
 
 sub special_place {
@@ -136,6 +136,14 @@ following modules on CPAN:
 
 Robert Rothenberg <rrwo at cpan.org>
 
+current Maintainer: Rene Schickbauer <rene.schickbauer at gmail.com>
+
+
+=head1 REPORTING BUGS
+
+We don't know of any bugs, but that doesn't mean there aren't any.
+Please the CPAN bugtracker or mail Rene Schickbauer directly.
+
 =head1 COPYRIGHT AND LICENSE
 
 Copyright (C) 2004 by Robert Rothenberg.  All Rights Reserved.
@@ -143,5 +151,8 @@ Copyright (C) 2004 by Robert Rothenberg.  All Rights Reserved.
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.3 or,
 at your option, any later version of Perl 5 you may have available.
+
+Now maintained by Rene Schickbauer, so i guess everything after version 0.02
+is (C) 2010 Rene Schickbauer
 
 =cut

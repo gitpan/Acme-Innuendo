@@ -26,3 +26,16 @@ DESCRIPTION
 AUTHOR
     Robert Rothenberg <rrwo at cpan.org>
 
+    current Maintainer: Rene Schickbauer <rene.schickbauer at gmail.com>
+
+REPORTING BUGS
+    We don't know of any bugs, but that doesn't mean there aren't any.
+    Please the CPAN bugtracker or mail Rene Schickbauer directly.
+
+LICENSE
+    Copyright (c) 2004 Robert Rothenberg. All rights reserved. This program
+    is free software; you can redistribute it and/or modify it under the
+    same terms as Perl itself.
+
+    Now maintained by Rene Schickbauer, so i guess everything after version 0.02
+    is (C) 2010 Rene Schickbauer
